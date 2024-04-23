@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import streamlit as st 
-import joblib
 import spacy
+import pickle
+
 
 st.sidebar.header('Please chosse the menu')
 st.sidebar.selectbox(options=['Select the emotions example','sad','happy','angry'],label='selectbox')
@@ -10,8 +11,8 @@ st.sidebar.button('sumbit')
 
 new_text=st.text_input('Enter your text')
 
-
-file=joblib.load("Human_emotion_new_project.pkl")
+with open('Human_emotion_new_project.pkl', 'rb') as f:
+    file = pickle.load(f)
 Button=st.button('Enter')
 
 def pre_procsses(text):
