@@ -9,3 +9,4 @@ neattext
 nltk
 matplotlib
 seaborn
+pickle
