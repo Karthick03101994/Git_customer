@@ -2,11 +2,19 @@ pandas
 numpy
 streamlit 
 joblib
+<<<<<<< HEAD
 spacy==3.7.2
+=======
+spacy-streamlit.
+>>>>>>> ed77321e257d5ec875dbf98cf1e508754c66af85
 python -m spacy download en_core_web_sm
 sklearn
 neattext
 nltk
 matplotlib
 seaborn
+<<<<<<< HEAD
 pickle
+=======
+pickle
+>>>>>>> ed77321e257d5ec875dbf98cf1e508754c66af85
