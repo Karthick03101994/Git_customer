@@ -2,7 +2,7 @@ pandas
 numpy
 streamlit 
 joblib
-spacy==3.7.2
+spacy
 python -m spacy download en_core_web_sm
 sklearn
 neattext
