@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st 
-import spacy
+import spacy_streamlit as slt
 import joblib
 
 st.sidebar.header('Please chosse the menu')
@@ -16,7 +16,7 @@ with open('Human_emotion_new_project.pkl', 'rb') as f:
 Button=st.button('Enter')
 
 def pre_procsses(text):
-    nlp=spacy.load('en_core_web_sm')
+    nlp=slt.load_model('en_core_web_sm' )
     doc=nlp(text)
     proccessed_token= [token.lemma_ for token in doc if not token.is_stop and not token.is_punct and token.is_alpha]
     pre_procsses=' '.join(proccessed_token)
